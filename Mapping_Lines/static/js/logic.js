@@ -37,7 +37,7 @@ let cityData = cities;
 // Loop through the cities array and create one marker for each city.
 cityData.forEach(function(city) {
     console.log(city)
-    L.circlemarker(city.location, {
+    L.circleMarker(city.location, {
         radius: city.population/100000
     })
     .bindPopup("<h2>" +
